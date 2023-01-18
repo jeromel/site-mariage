@@ -79,11 +79,28 @@ html, body{
     opacity: .8;
 }
 .church-image{
-    width: 300;
+    margin-top: 2em;
+
+    width: 20em;
+
+    filter: drop-shadow(0.2rem 0.2rem 0.4rem gray);
+    -webkit-filter: drop-shadow(0.2rem 0.2rem 0.4rem gray);
 }
 
 .resort-image{
+    margin-top: 2em;
     width: 100%;
+    
+    filter: drop-shadow(0.2rem 0.2rem 0.4rem gray);
+    -webkit-filter: drop-shadow(0.2rem 0.2rem 0.4rem gray);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ul {
