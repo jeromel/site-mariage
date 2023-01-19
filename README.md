@@ -1,5 +1,5 @@
 # Wedding Site Template
-Thanks to Jason Lutter loh !
+Many, many Thanks to Jason Lutter loh !
 
 A simple, responsive, easy-to-edit wedding website template.
 
