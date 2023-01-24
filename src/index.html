@@ -119,9 +119,42 @@
       <div class="details">
         <i class="fas fa-reply"></i>
         <h3 class="details-heading" id="rsvp">RSVP</h3>
-        <p>[Embed your RSVP form here]</p>
-        <!-- Include Embedded link of Google Form here in place of # -->
-        <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+        
+        <div id="formulaireContact" class="form">
+          <form action="#" onsubmit="sendEmail()" method="post" enctype="text/plain" id="formEmail">
+            <div class="form-group">
+              <label for="name">Prénom et nom: *</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="name" name="Prénom & NOM" value="" placeholder="Prénom & Nom" required="required" autofocus="autofocus" />
+            </div>
+            <div class="form-group">
+              <label for="email">Votre adresse mail: * </span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" value="" placeholder="adresse@example.com" required="required" />
+            </div>
+            <div class="form-group">
+              <label for="enquiry">Présence: </label>
+            </div>
+            <div class="form-group">
+              <select id="presence">
+                <option value="Je serai présent(e) !">Je serai présent(e) !</option>
+                <option value="Je ne pourrai malheureusement pas être présent(e) !">Je ne pourrai malheureusement pas être présent(e) !</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message: <span class="required">*</span></label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="Message" placeholder="Souhaitez-vous nous dire un petit mot ?" required="required" data-minlength=""></textarea>
+            </div>
+            
+            <div class="submit">
+              <input type="submit" value="Envoyer">
+            </div>
+          </form>
+        </div>
       </div>
     </section>
     <script src="./js/smooth-scroll.polyfills.min.js"></script>
@@ -133,6 +166,13 @@
       function hideButton() {
         rsvpButton.style.display = 'none';
       }   
+
+      function sendEmail() {
+        document.getElementById('formEmail').action = "mailto:contact@mariagehelenejeromelibbrecht.fr?subject=" + document.getElementById("name").value + " a repondu : " + document.getElementById("presence").value + "&body=" + document.getElementById('message').value;
+        var action = document.getElementById('formEmail').action;
+
+        console.log(action);
+      }
     </script>
   </body>
 </html>

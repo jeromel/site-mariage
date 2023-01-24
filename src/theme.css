@@ -92,7 +92,7 @@ html, body{
     width: 100%;
     
     filter: drop-shadow(0.2rem 0.2rem 0.4rem gray);
-    -webkit-filter: drop-shadow(0.2rem 0.2rem 0.4rem gray);
+    -webkit-filter: drop-shadow(0.2rem 0.2rem 0.4rem gray);src/theme.css
 
     /* Full height */
     height: 100%;
@@ -111,6 +111,36 @@ ul {
 
 li {
     margin-top: 0.8em;
+}
+
+.form {
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    margin-top: .8em;
+}
+
+.form-group label {
+    flex-grow:2
+}
+
+.form-group input {
+    flex-grow: 2;
+}
+
+.form-group select {
+    flex-grow: 2;
+}
+
+.form-group textarea {
+    flex-grow: 2;
+}
+
+.submit {
+    margin-top: .9em;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
