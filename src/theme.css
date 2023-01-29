@@ -58,6 +58,7 @@ html, body{
     text-decoration: none;
     z-index: 9999;
 }
+
 .fixed-button::after{
     content: "\25BE";
     display: block;
@@ -73,8 +74,19 @@ html, body{
 }
 
 .papillon {
-    margin-top: .5em;
+    
+    position: fixed;
+    display: block;
     text-align: right;
+    
+    top: 10em;
+    right: 12em;
+    
+    padding: 1em;
+    position: fixed;
+    
+    text-decoration: none;
+    z-index: 9999;
 }
 
 .section{
@@ -82,6 +94,7 @@ html, body{
     max-width: 600px;
     padding: 1em 2.4em;
 }
+
 .sub-heading{
     font-family: 'Elsie-Black', cursive;
     font-size: 2em;
@@ -170,5 +183,10 @@ li {
 @media only screen and (max-width: 600px) {
     .heading {
         font-size: 4em;
+    }
+
+    .papillon {
+        top: 6;
+        left: 16em;
     }
   }
