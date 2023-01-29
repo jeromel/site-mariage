@@ -33,9 +33,11 @@ html, body{
     color: #ffffff;
     display: block;
     font-family: 'Elsie-Regular', cursive;
-    font-size: 6em;
+    font-size: 4em;
     font-weight: normal;
     text-shadow: 0 0 10px #000;
+    margin-left: -7.5em;
+    margin-top: .5em;
 }
 .heading-subtext{
     color: #fff;
