@@ -73,6 +73,17 @@ html, body{
     background: rgba(20,20,20,.9);
 }
 
+.petales-45 {
+    transform: rotate(45deg);
+}
+
+.petales {
+    transform: rotate(270deg);
+    
+    
+    display: block;
+}
+
 .papillon {
     
     position: fixed;
