@@ -75,12 +75,12 @@ html, body{
 
 .petales-45 {
     transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
 }
 
 .petales {
     transform: rotate(270deg);
-    
-    
+    -ms-transform: rotate(270deg);
     display: block;
 }
 
