@@ -36,15 +36,16 @@ html, body{
     font-size: 4em;
     font-weight: normal;
     text-shadow: 0 0 10px #000;
-    margin-left: -7.5em;
-    margin-top: .5em;
+    text-align: left;
 }
+
 .heading-subtext{
     color: #fff;
     display: block;
     font-family: 'Elsie-Regular', cursive;
     font-size: .6em;
 }
+
 .fixed-button{
     background: rgba(20,20,20,.5);
     border-radius: 1em;
@@ -70,6 +71,12 @@ html, body{
 .fixed-button:hover{
     background: rgba(20,20,20,.9);
 }
+
+.papillon {
+    margin-top: .5em;
+    text-align: right;
+}
+
 .section{
     margin: 0 auto;
     max-width: 600px;
@@ -77,7 +84,7 @@ html, body{
 }
 .sub-heading{
     font-family: 'Elsie-Black', cursive;
-    font-size: 3em;
+    font-size: 2em;
     margin-top: 2em;
 }
 .details{
@@ -154,6 +161,10 @@ li {
 .submit {
     margin-top: .9em;
     text-align: center;
+}
+
+.footer {
+    text-align: left;;
 }
 
 @media only screen and (max-width: 600px) {
