@@ -1,15 +1,26 @@
+@font-face {
+    font-family: Elsie-Black;
+    src: url(./fonts/Elsie-Black.ttf)
+}
+
+@font-face {
+    font-family: Elsie-Regular;
+    src: url(./fonts/Elsie-Regular.ttf)
+}
+
 *{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    color: #222;
+    font-family: 'Elsie-Regular', sans-serif;
+    font-size: 18px;
+    color: #004388;
 }
 html, body{
     margin: 0;
     height: 100vh;
     text-align: center;
 }
+
 .header{
-    background-image: url(./img/background.jpeg);
+    background-image: url(./img/banniere.jpeg);
     background-repeat: no-repeat;
     background-position: 40% 50%;
     background-attachment: scroll;
@@ -21,7 +32,7 @@ html, body{
 .heading {
     color: #ffffff;
     display: block;
-    font-family: 'Caveat', cursive;
+    font-family: 'Elsie-Regular', cursive;
     font-size: 6em;
     font-weight: normal;
     text-shadow: 0 0 10px #000;
@@ -29,7 +40,7 @@ html, body{
 .heading-subtext{
     color: #fff;
     display: block;
-    font-family: 'Caveat', cursive;
+    font-family: 'Elsie-Regular', cursive;
     font-size: .6em;
 }
 .fixed-button{
@@ -63,7 +74,7 @@ html, body{
     padding: 1em 2.4em;
 }
 .sub-heading{
-    font-family: 'Caveat', cursive;
+    font-family: 'Elsie-Black', cursive;
     font-size: 3em;
     margin-top: 2em;
 }
