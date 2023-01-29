@@ -1,5 +1,8 @@
 # Wedding Site Template
-Many, many Thanks to Jason Lutter loh !
+Many, many Thanks to Jason Lutter loh  for the base of the template
+ and to Alice Fromanger for the theme
+ and to my brother Sébastien for the hosting and all the rest
+ and to my future wife Helene !
 
 A simple, responsive, easy-to-edit wedding website template.
 
