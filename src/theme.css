@@ -200,3 +200,29 @@ li {
         left: 16em;
     }
   }
+
+
+  /********** alert  **********/
+  .alert {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f3e461;
+    color: gray;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: gray;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+  /********** /alert  **********/
