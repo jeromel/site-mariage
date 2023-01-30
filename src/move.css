@@ -1,64 +1,162 @@
-/*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*/
-@keyframes animation1 {
-	0% {
-	  transform: translate(592px, 652px);
-	}
-	12.5% {
-	  transform: translate(724px, 625px);
-	}
-	15% {
-	  transform: translate(756px, 652px);
-	}
+
+@media only screen and (max-width: 400px) {
+
+	@keyframes animation1 {
 	
-	20% {
-	  transform: translate(788px, 679px);
+		10% {
+		transform: translate(4em, -4em);
+		-webkit-transform: translate(4em, -4em);
+		}
+		
+		20% {
+			transform: translate(10em, 4em);
+			-webkit-transform: translate(10em, 4em);
+		}
+
+		30% {
+			transform: translate(15em, -4em);
+			-webkit-transform: translate(15em, -4em);
+		}
+
+		50% {
+			transform: translate(20em, 4em);
+			-webkit-transform: translate(20em, 4em);
+		}
+		
+		100% {
+			transform: translate(25em, 8em);
+			-webkit-transform: translate(25em, 8em);
+		}
+
+		0% {
+			opacity: 1;
+		}
+		15% {
+			opacity: 0;
+		}
+		25% {
+			opacity: 1;
+		}
+		40% {
+			opacity: 0;
+		}
+		60% {
+			opacity: 1;
+		}
+		70% {
+			opacity: 0;
+		}
+		85% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
 	}
-	25% {
-		transform: translate(820px, 725px);
+
+	.elem1 {
+		left: 0em;
+		top: 6em;
+
+		animation: animation1 linear 8s infinite;
 	}
-	30% {
-		transform: translate(956px, 652px);
+
+	.anim-delay1 {
+		animation-delay: .5s;
 	  }
+}
 
-	40% {
-		transform: translate(1020px, 825px);
+@media only screen and (min-width: 401px){
+
+	@keyframes animation1 {
+		0% {
+			transform: translate(5em, 8em);
+			-webkit-transform: translate(5em, 8em);
+		}
+		12.5% {
+			transform: translate(12.5em, -3em);
+			-webkit-transform: translate(12.5em, -3em);
+		}
+		15% {
+			transform: translate(15em, 5em);
+			transform: translate(15em, 5em);
+		}
+		
+		20% {
+			transform: translate(20em, -2em);
+			-webkit-transform: translate(20em, -2em);
+		}
+		25% {
+			transform: translate(25em, 2em);
+			-webkit-transform: translate(25em, 2em);
+		}
+		30% {
+			transform: translate(30em, -2em);
+			-webkit-transform: translate(30em, -2em);
+		}
+
+		40% {
+			transform: translate(40em, 6em);
+			-webkit-transform: translate(40em, 6em);
+		}
+
+		50% {
+			transform: translate(50em, -4em);
+			-webkit-transform: translate(50em, -4em);
+		}
+		62.5% {
+			transform: translate(62.5em, 2em);
+			-webkit-transform: translate(62.5em, 2em);
+		}
+		75% {
+			transform: translate(75em, -2em);
+			-webkit-transform: translate(75em, -2em);
+		}
+		87.5% {
+			transform: translate(87.5em, 4em);
+			-webkit-transform: translate(87.5em, 4em);
+		}
+		100% {
+			transform: translate(100em, 4em);
+			-webkit-transform: translate(100em, 4em);
+		}
+		0% {
+			opacity: 1;
+		}
+		15% {
+			opacity: 0;
+		}
+		25% {
+			opacity: 1;
+		}
+		40% {
+			opacity: 0;
+		}
+		60% {
+			opacity: 1;
+		}
+		70% {
+			opacity: 0;
+		}
+		85% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
 	}
 
-	50% {
-	  transform: translate(1420px, 752px);
+	.elem1 {
+		left: 4em;
+		top: 40em;
+	
+		animation: animation1 linear 8s infinite;
 	}
-	62.5% {
-	  transform: translate(1752px, 679px);
-	}
-	75% {
-	  transform: translate(1884px, 652px);
-	}
-	87.5% {
-	  transform: translate(1916px, 679px);
-	}
-	100% {
-	  transform: translate(2048px, 452px);
-	}
-	0% {
-	  opacity: 1;
-	}
-	15% {
-		opacity: 0;
-	  }
-	25% {
-	  opacity: 1;
-	}
-	85% {
-	  opacity: 1;
-	}
-	100% {
-	  opacity: 0;
-	}
-  }
 
+	.anim-delay1 {
+		animation-delay: 1s;
+	}
+}
   .particle {
 	position: absolute;
 	opacity: 0;
@@ -70,18 +168,12 @@
 	z-index: 9999;
 	background-size: contain;
   }
+
   .elem1 {
-	left: 156px;
-	top: 139px;
-	animation: animation1 linear 4s infinite;
 	height: 4em;
 	width: 4em;
 	background-image: url(./img/papillon.png);
 	background-repeat: no-repeat;
-  }
- 
-  .anim-delay1 {
-	animation-delay: 5s;
   }
  
   .wrapper {
