@@ -157,6 +157,98 @@
 		animation-delay: 1s;
 	}
 }
+
+@media only screen and (min-width: 401px) and (max-width: 1280px){
+	@keyframes animation1 {
+		0% {
+			transform: translate(5em, 8em);
+			-webkit-transform: translate(5em, 8em);
+		}
+		12.5% {
+			transform: translate(12.5em, -3em);
+			-webkit-transform: translate(12.5em, -3em);
+		}
+		15% {
+			transform: translate(15em, 5em);
+			transform: translate(15em, 5em);
+		}
+		
+		20% {
+			transform: translate(20em, -2em);
+			-webkit-transform: translate(20em, -2em);
+		}
+		25% {
+			transform: translate(25em, 2em);
+			-webkit-transform: translate(25em, 2em);
+		}
+		30% {
+			transform: translate(30em, -2em);
+			-webkit-transform: translate(30em, -2em);
+		}
+
+		40% {
+			transform: translate(40em, 6em);
+			-webkit-transform: translate(40em, 6em);
+		}
+
+		50% {
+			transform: translate(50em, -4em);
+			-webkit-transform: translate(50em, -4em);
+		}
+		62.5% {
+			transform: translate(62.5em, 2em);
+			-webkit-transform: translate(62.5em, 2em);
+		}
+		75% {
+			transform: translate(75em, -2em);
+			-webkit-transform: translate(75em, -2em);
+		}
+		87.5% {
+			transform: translate(87.5em, 4em);
+			-webkit-transform: translate(87.5em, 4em);
+		}
+		100% {
+			transform: translate(100em, 4em);
+			-webkit-transform: translate(100em, 4em);
+		}
+		0% {
+			opacity: 1;
+		}
+		15% {
+			opacity: 0;
+		}
+		25% {
+			opacity: 1;
+		}
+		40% {
+			opacity: 0;
+		}
+		60% {
+			opacity: 1;
+		}
+		70% {
+			opacity: 0;
+		}
+		85% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	.elem1 {
+		left: 2em;
+		top: 4em;
+	
+		animation: animation1 linear 10s infinite;
+	}
+
+	.anim-delay1 {
+		animation-delay: 1s;
+	}
+}
+
   .particle {
 	position: absolute;
 	opacity: 0;
