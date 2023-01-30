@@ -20,7 +20,7 @@ html, body{
 }
 
 .header{
-    background-image: url(./img/banniere.jpeg);
+    background-image: url(./img/banniere-min.jpeg);
     background-repeat: no-repeat;
     background-position: 40% 50%;
     background-attachment: scroll;
