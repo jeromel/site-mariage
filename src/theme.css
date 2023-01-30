@@ -135,6 +135,10 @@ html, body{
     text-align: center;
 }
 
+.number {
+    font-family: 'Roboto';
+}
+
 .resort-image{
     margin-top: 2em;
     width: 100%;
@@ -158,7 +162,8 @@ ul {
 }
 
 li {
-    margin-top: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
 }
 
 .form {
