@@ -108,10 +108,10 @@ html, body{
 .sub-heading{
     font-family: 'Elsie-Black', cursive;
     font-size: 2em;
-    margin-top: 2em;
+    margin-top: 1.8em;
 }
 .details{
-    margin: 0 auto 8em;
+    margin: 0 auto 6em;
 }
 .details-heading{
     font-weight: bold;
@@ -133,6 +133,10 @@ html, body{
 .calendar-link {
     display: block;
     text-align: center;
+}
+
+.number {
+    font-family: 'Roboto';
 }
 
 .resort-image{
@@ -158,7 +162,8 @@ ul {
 }
 
 li {
-    margin-top: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
 }
 
 .form {
