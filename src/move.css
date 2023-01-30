@@ -1,0 +1,95 @@
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+@keyframes animation1 {
+	0% {
+	  transform: translate(592px, 652px);
+	}
+	12.5% {
+	  transform: translate(724px, 625px);
+	}
+	15% {
+	  transform: translate(756px, 652px);
+	}
+	
+	20% {
+	  transform: translate(788px, 679px);
+	}
+	25% {
+		transform: translate(820px, 725px);
+	}
+	30% {
+		transform: translate(956px, 652px);
+	  }
+
+	40% {
+		transform: translate(1020px, 825px);
+	}
+
+	50% {
+	  transform: translate(1420px, 752px);
+	}
+	62.5% {
+	  transform: translate(1752px, 679px);
+	}
+	75% {
+	  transform: translate(1884px, 652px);
+	}
+	87.5% {
+	  transform: translate(1916px, 679px);
+	}
+	100% {
+	  transform: translate(2048px, 452px);
+	}
+	0% {
+	  opacity: 1;
+	}
+	15% {
+		opacity: 0;
+	  }
+	25% {
+	  opacity: 1;
+	}
+	85% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
+
+  .particle {
+	position: absolute;
+	opacity: 0;
+	overflow: visible;
+	position: fixed;
+    
+    text-decoration: none;
+
+	z-index: 9999;
+	background-size: contain;
+  }
+  .elem1 {
+	left: 156px;
+	top: 139px;
+	animation: animation1 linear 4s infinite;
+	height: 4em;
+	width: 4em;
+	background-image: url(./img/papillon.png);
+	background-repeat: no-repeat;
+  }
+ 
+  .anim-delay1 {
+	animation-delay: 5s;
+  }
+ 
+  .wrapper {
+	height: 100vh;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	background: #333;
+	position: relative;
+  }
+  
