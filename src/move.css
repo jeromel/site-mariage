@@ -2,7 +2,11 @@
 @media only screen and (max-width: 400px) {
 
 	@keyframes animation1 {
-	
+		0% {
+			transform: translate(2em, 2em);
+			-webkit-transform: translate(2em, 2em);
+		}
+
 		10% {
 		transform: translate(4em, -4em);
 		-webkit-transform: translate(4em, -4em);
