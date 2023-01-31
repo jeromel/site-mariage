@@ -172,11 +172,13 @@ li {
 
 .form-group {
     display: flex;
+    
     margin-top: .8em;
 }
 
 .form-group label {
-    flex-grow:2
+    flex-grow:2;
+    max-width: 16em;
 }
 
 .form-group input {
@@ -198,6 +200,10 @@ li {
 
 .footer {
     text-align: left;;
+}
+
+.oiseau {
+    max-width: 20.5em;
 }
 
 .contact-email {
