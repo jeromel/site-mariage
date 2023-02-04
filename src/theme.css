@@ -11,7 +11,7 @@
 *{
     font-family: 'Elsie-Regular', sans-serif;
     font-size: 18px;
-    color: #004388;
+    color: #034890;
 }
 html, body{
     margin: 0;
@@ -110,6 +110,11 @@ html, body{
     font-size: 2em;
     margin-top: 1.8em;
 }
+
+.fleur {
+    margin-bottom: -2em;
+}
+
 .details{
     margin: 0 auto 6em;
 }
@@ -117,10 +122,12 @@ html, body{
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .fas {
     font-size: 3em;
     opacity: .8;
 }
+
 .church-image{
     margin-top: 2em;
 
@@ -198,8 +205,8 @@ li {
     text-align: center;
 }
 
-.footer {
-    text-align: left;;
+.left {
+    text-align: left;
 }
 
 .oiseau {
@@ -251,7 +258,7 @@ li {
   .alert {
     margin-top: 2em;
     padding: 1em;
-    background-color: #f3e461;
+    background-color: #f0cf44;
     color: gray;
   }
   
