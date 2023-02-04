@@ -110,6 +110,11 @@ html, body{
     font-size: 2em;
     margin-top: 1.8em;
 }
+
+.fleur {
+    margin-bottom: -2em;
+}
+
 .details{
     margin: 0 auto 6em;
 }
@@ -200,8 +205,8 @@ li {
     text-align: center;
 }
 
-.footer {
-    text-align: left;;
+.left {
+    text-align: left;
 }
 
 .oiseau {
