@@ -1,6 +1,12 @@
 const slideshow = document.getElementById('slideshow');
 const container = document.getElementById('main');
 const image = document.getElementById('image');
+const imageCache1 = document.getElementById('image-cache1');
+const imageCache2 = document.getElementById('image-cache2');
+const imageCache3 = document.getElementById('image-cache3');
+const imageCache4 = document.getElementById('image-cache4');
+const imageCache5 = document.getElementById('image-cache5');
+
 const prevButton = document.getElementById('prevButton');
 const playButton = document.getElementById('playButton');
 const pauseButton = document.getElementById('pauseButton');
@@ -12,9 +18,25 @@ let currentImageIndex = 1;
 let isPlaying = false;
 let interval;
 
+function loadCaches(index) {
+  if (index < numImages-5) {
+    imageCache1.src = `${imageFolder}picture${index+1}.jpg`;
+    imageCache2.src = `${imageFolder}picture${index+2}.jpg`;
+    imageCache3.src = `${imageFolder}picture${index+3}.jpg`;
+    imageCache4.src = `${imageFolder}picture${index+4}.jpg`;
+    imageCache5.src = `${imageFolder}picture${index+5}.jpg`;
+
+    imageCache1.onload = function () {};
+    imageCache2.onload = function () {};
+    imageCache3.onload = function () {};
+    imageCache4.onload = function () {};
+    imageCache5.onload = function () {};
+  }
+}
+
 function loadImage(index) {
   image.src = `${imageFolder}picture${index}.jpg`;
-
+  loadCaches(index);
   image.onload = function() {
     const ratio = image.naturalHeight/image.naturalWidth;
 
@@ -102,7 +124,7 @@ function setButtonGroupLight() {
 
   buttonGroup.querySelectorAll('.btn').forEach(button => {
     button.classList.remove('btn-dark');
-    button.classList.add('btn-info');
+    button.classList.add('btn-secondary');
   });
 }
 
@@ -110,7 +132,7 @@ function setButtonGroupDark() {
   const buttonGroup = document.querySelector('.btn-group');
 
   buttonGroup.querySelectorAll('.btn').forEach(button => {
-    button.classList.remove('btn-info');
+    button.classList.remove('btn-secondary');
     button.classList.add('btn-dark');
   });
 }
