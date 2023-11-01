@@ -20,7 +20,7 @@ let interval;
 
 function loadCaches(index) {
   if (index < numImages-5) {
-    var startCache = (index-1)*5+1;
+    var startCache = (index-1)*5+2;
     imageCache1.src = `${imageFolder}picture${startCache}.jpg`;
     imageCache2.src = `${imageFolder}picture${startCache+1}.jpg`;
     imageCache3.src = `${imageFolder}picture${startCache+2}.jpg`;
