@@ -1,0 +1,38 @@
+/* Styles pour afficher le diaporama en mode plein écran */
+#slideshow:fullscreen {
+  display: block;
+}
+
+.portrait {
+  width: auto;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.square {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.landscape {
+  width: 100%;
+}
+
+.panoramic {
+  margin: 12em auto;
+}
+
+#slideshow:not(:fullscreen) > .row > img {
+  max-width: 1440px;
+  max-height: 900px;
+  width:auto;
+  margin: 0 auto;
+}
+
+.btn-group {
+  margin: auto;
+}
+
+.row {
+  margin-bottom: .5em;
+}

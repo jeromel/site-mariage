@@ -19,7 +19,7 @@ html, body{
     text-align: center;
 }
 
-.header{
+.header-ban{
     background-image: url(./img/banniere-min.jpeg);
     background-repeat: no-repeat;
     background-position: 40% 50%;
@@ -29,8 +29,8 @@ html, body{
     margin: 0;
     padding-top: 60vh;
 }
-.heading {
-    color: #ffffff;
+
+.heading-ban {
     display: block;
     font-family: 'Elsie-Regular', cursive;
     font-size: 4em;
@@ -39,12 +39,25 @@ html, body{
     text-align: left;
 }
 
-.heading-subtext{
+.heading-ban-subtext{
     color: #fff;
     display: block;
     font-family: 'Elsie-Regular', cursive;
     font-size: .6em;
 }
+
+.heading {
+    font-family: 'Elsie-Regular', cursive;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.heading-subtext{
+    display: block;
+    font-family: 'Elsie-Regular', cursive;
+    font-size: .6em;
+}
+
 
 .fixed-button{
     background: rgba(20,20,20,.5);
@@ -281,3 +294,4 @@ li {
     color: black;
   }
   /********** /alert  **********/
+
