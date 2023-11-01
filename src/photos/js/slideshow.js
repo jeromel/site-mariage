@@ -8,7 +8,7 @@ const nextButton = document.getElementById('nextButton');
 const fullscreenButton = document.getElementById('fullscreenButton');
 
 const imageFolder = 'pictures/';
-let currentImageIndex = 342;
+let currentImageIndex = 1;
 let isPlaying = false;
 let interval;
 
@@ -17,9 +17,7 @@ function loadImage(index) {
 
   image.onload = function() {
     const ratio = image.naturalHeight/image.naturalWidth;
-    console.log(image.naturalHeight);
-    console.log(image.naturalWidth);
-console.log(ratio);
+
     if (image.naturalWidth < image.naturalHeight) {
       setPortrait(image);
     } else {
