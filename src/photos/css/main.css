@@ -1,6 +1,14 @@
+body {
+  background-color: black;
+}
+
 /* Styles pour afficher le diaporama en mode plein écran */
 #slideshow:fullscreen {
   display: block;
+}
+
+.image-cache {
+  display: none;
 }
 
 .portrait {
